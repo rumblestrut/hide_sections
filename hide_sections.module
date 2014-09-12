@@ -1,0 +1,23 @@
+<?php
+/**
+ * Display help and module information
+ */
+
+function hide_sections_help($path, $arg) {
+  $output = ''; // declare the output variable
+  switch ($path) {
+    case "admin/help#hide_sections":
+      $output = '<p>' . t("Change Sections to Programs in Workbench.") . '</p>';
+      break;
+  }
+  return $output;
+} // function hide_sections_help
+
+
+  /*
+  * Add the CSS and JavaScript to the page
+  */
+function hide_sections_init() {
+  global $node;
+  drupal_add_js(drupal_get_path('module', 'hide_sections') .'/hide_sections.js');
+}

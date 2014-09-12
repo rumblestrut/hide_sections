@@ -1,0 +1,4 @@
+name = "Hide Sections"
+package = "OPRO"
+description = "Changes the naming of Sections to Programs in Workbench."
+core = 7.x
